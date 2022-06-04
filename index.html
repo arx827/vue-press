@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.46">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png"><link rel="manifest" href="/manifest.webmanifest"><meta name="application-name" content="VuePress"><meta name="apple-mobile-web-app-title" content="VuePress"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png"><link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#3eaf7c"><meta name="msapplication-TileColor" content="#3eaf7c"><meta name="theme-color" content="#3eaf7c"><title>首頁 | VuePress</title><meta name="description" content="Vue 驅動的靜態網站生成器">
+    <link rel="modulepreload" href="/vue-press/assets/app.f15ed2f5.js"><link rel="modulepreload" href="/vue-press/assets/index.html.46d51595.js"><link rel="modulepreload" href="/vue-press/assets/index.html.a6f83800.js"><link rel="prefetch" href="/vue-press/assets/assets.html.49c75491.js"><link rel="prefetch" href="/vue-press/assets/bundler.html.3b63afd0.js"><link rel="prefetch" href="/vue-press/assets/configuration.html.46970ab9.js"><link rel="prefetch" href="/vue-press/assets/deployment.html.82367b84.js"><link rel="prefetch" href="/vue-press/assets/getting-started.html.3bf3c9c5.js"><link rel="prefetch" href="/vue-press/assets/i18n.html.aefc4231.js"><link rel="prefetch" href="/vue-press/assets/index.html.329068b8.js"><link rel="prefetch" href="/vue-press/assets/markdown.html.b9df09ee.js"><link rel="prefetch" href="/vue-press/assets/migration.html.7410392e.js"><link rel="prefetch" href="/vue-press/assets/page.html.661b93a1.js"><link rel="prefetch" href="/vue-press/assets/plugin.html.65a5dc3c.js"><link rel="prefetch" href="/vue-press/assets/theme.html.dd4307eb.js"><link rel="prefetch" href="/vue-press/assets/404.html.6b32814d.js"><link rel="prefetch" href="/vue-press/assets/assets.html.c90bc5c3.js"><link rel="prefetch" href="/vue-press/assets/bundler.html.ccddce7b.js"><link rel="prefetch" href="/vue-press/assets/configuration.html.34cda3b5.js"><link rel="prefetch" href="/vue-press/assets/deployment.html.1b2c04c9.js"><link rel="prefetch" href="/vue-press/assets/getting-started.html.af6d2c92.js"><link rel="prefetch" href="/vue-press/assets/i18n.html.8ff45e93.js"><link rel="prefetch" href="/vue-press/assets/index.html.b748dcc9.js"><link rel="prefetch" href="/vue-press/assets/markdown.html.7be9060c.js"><link rel="prefetch" href="/vue-press/assets/migration.html.e49e5712.js"><link rel="prefetch" href="/vue-press/assets/page.html.74867d31.js"><link rel="prefetch" href="/vue-press/assets/plugin.html.8feffe9a.js"><link rel="prefetch" href="/vue-press/assets/theme.html.c507af55.js"><link rel="prefetch" href="/vue-press/assets/404.html.8fa1376a.js"><link rel="prefetch" href="/vue-press/assets/404.c8f0b589.js"><link rel="prefetch" href="/vue-press/assets/Layout.aba3ffb4.js">
+    <link rel="stylesheet" href="/vue-press/assets/style.2074c945.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/vue-press/" class="router-link-active router-link-exact-active"><img class="logo" src="/vue-press/images/hero.png" alt="VuePress"><span class="site-name can-hide">VuePress</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/vue-press/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/vue-press/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="home"><header class="hero"><img src="/vue-press/images/hero.png" alt="VuePress"><h1 id="main-title">VuePress</h1><p class="description">Vue 驅動的靜態網站生成器</p><p class="actions"><!--[--><a href="/vue-press/guide/getting-started.html" class="action-button primary" aria-label="快速上手"><!--[--><!--]--> 快速上手 <!--[--><!--]--></a><a href="/vue-press/guide/" class="action-button secondary" aria-label="項目簡介"><!--[--><!--]--> 項目簡介 <!--[--><!--]--></a><!--]--></p></header><div class="features"><!--[--><div class="feature"><h2>簡潔至上</h2><p>以 Markdown 為中心的項目結構，以最少的配置幫助你專注於寫作。</p></div><div class="feature"><h2>Vue驅動</h2><p>享受Vue 的開發體驗，可以在Markdown 中使用Vue 組件，又可以使用Vue 來開發自定義主題。</p></div><div class="feature"><h2>高性能</h2><p>VuePress 會為每個頁面預渲染生成靜態的HTML，同時，每個頁面被加載的時候，將作為SPA 運行。</p></div><div class="feature"><h2>主題</h2><p>提供了一個開箱即用的默認主題。你也可以挑選一個社區主題，或者創建一個你自己的主題。</p></div><div class="feature"><h2>插件</h2><p>靈活的插件API，使得插件可以為你的站點提供許多即插即用的功能。</p></div><div class="feature"><h2>打包工具</h2><p>默認的打包工具是Vite ，也同樣支持Webpack 。選一個你喜歡的來使用吧！</p></div><!--]--></div><div class="theme-default-content custom"><div><h3 id="像數-1-2-3-一樣容易" tabindex="-1"><a class="header-anchor" href="#像數-1-2-3-一樣容易" aria-hidden="true">#</a> 像數 1, 2, 3 一樣容易</h3><div class="code-group"><div class="code-group__nav"><ul class="code-group__ul"><li class="code-group__li"><button class="code-group__nav-tab code-group__nav-tab-active" ariapressed="true" ariaexpanded="true">YARN</button></li><li class="code-group__li"><button class="code-group__nav-tab" ariapressed="false" ariaexpanded="false">NPM</button></li></ul></div><!--[--><div class="code-group-item code-group-item__active" aria-selected="true"><!--[--><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 在你的項目中安裝</span>
+<span class="token function">yarn</span> <span class="token function">add</span> -D vuepress@next
+
+<span class="token comment"># 新建一個 markdown 文件</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&#39;# Hello VuePress&#39;</span> <span class="token operator">&gt;</span> README.md
+
+<span class="token comment"># 開始寫作</span>
+<span class="token function">yarn</span> vuepress dev
+
+<span class="token comment"># 構建靜態文件</span>
+<span class="token function">yarn</span> vuepress build
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><!--]--></div><div class="code-group-item" aria-selected="false"><!--[--><div class="language-bash ext-sh line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 在你的項目中安裝</span>
+<span class="token function">npm</span> <span class="token function">install</span> -D vuepress@next
+
+<span class="token comment"># 新建一個 markdown 文件</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&#39;# Hello VuePress&#39;</span> <span class="token operator">&gt;</span> README.md
+
+<span class="token comment"># 開始寫作</span>
+npx vuepress dev
+
+<span class="token comment"># 構建靜態文件</span>
+npx vuepress build
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><!--]--></div><!--]--></div><div class="language-markdown ext-md line-numbers-mode"><pre class="language-markdown"><code><span class="token comment">&lt;!-- 默认情况下，这里会被保持原样 --&gt;</span>
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-markdown ext-md line-numbers-mode"><pre class="language-markdown"><code><span class="token comment">&lt;!-- 这里会被 Vue 编译 --&gt;</span>
+1 + 2 + 3 = 6
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript ext-js line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 由于 JS 代码高亮，这里不会被正确编译</span>
+<span class="token keyword">const</span> onePlusTwoPlusThree <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></div></div><!--[--><div class="footer">MIT Licensed | Copyright © 2018-present</div><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/vue-press/assets/app.f15ed2f5.js" defer></script>
+  </body>
+</html>
