@@ -1,0 +1,39 @@
+name: docs
+
+on:
+  # 每當 push 到 master 分支時觸發部署
+  push:
+    branches:
+      - master
+  # 手動觸發部署
+  workflow_dispatch:
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # “最近更新時間” 等 git 日誌相關信息，需要拉取全部提交紀錄
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      # 緩存 node_modules
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        id: npm-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/npm.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      # 如果緩存沒有命中，安裝依賴
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
